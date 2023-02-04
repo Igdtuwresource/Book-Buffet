@@ -156,7 +156,7 @@ background-image: url('https://t4.ftcdn.net/jpg/02/50/37/59/240_F_250375989_bQpa
       font-size:30px;
     }
     .card {
-      margin-left:35px;
+      margin-left:25px;
       width:250px;
       margin-top: 10px;
     }
@@ -308,4 +308,59 @@ display:none;
 .topnav a.active {
   background-color: #ddd;
   color: white;
+}
+.popup{
+  background-color: #3fa4e7;
+  width: 450px;
+  
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  padding-right:10px;
+  padding-left:10px;
+  height:180px;
+  margin-top:170px;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  display: none;
+  text-align: center;
+}
+.close{
+  padding-top:20px;
+}
+.popup button{
+  display: block;
+  margin:  0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #442f02;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.popup p{
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+@media screen and (max-width:720px){
+  .popup{
+    width:250px;height:200px;
+    margin-bottom:10px;
+  }
+  .popup p{
+    text-decoration:none;
+    font-size:10px;
+    padding-right:30px;
+
+  }
+  .btns{
+    font-size:10px;
+    margin-right:90px;
+    float:left;
+  }
+  .close{
+    padding-top:10px;
+  }
 }

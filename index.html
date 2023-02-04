@@ -50,11 +50,31 @@
         margin-bottom:2px;
         
       }
-      
+      .popup p{
+        padding-left:80px;
+      }
+      .btns{
+        margin-bottom:30px;
+        background-color: black;
+        text-decoration: underline;
+      }
+      .btns:hover{
+line-height:40px;
+      }
     </style>
   </head>
   <body>
-    
+    <div class="popup">
+      <button id="close" class="close">&times;</button><br>
+      <h6>Welcome to BOOK BUFFET</h6>
+      <p>
+          <b>LOGIN/ SIGN UP to BUY/ SELL THE BOOK.<br>
+          ALSO READ THE TERMS & CONDITIONS.
+          </b>
+          <button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/login/';">Login</button>
+      </p>
+      
+  </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <h4 class="navbar-brand" >BOOK BUFFET</h4>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -226,6 +246,16 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-    
+    <script>window.addEventListener("load", function(){
+      setTimeout(
+          function open(event){
+              document.querySelector(".popup").style.display = "block";
+          },
+          1000
+      )
+  });
+  document.querySelector("#close").addEventListener("click", function(){
+      document.querySelector(".popup").style.display = "none";
+  });</script>
   </body>
 </html>
