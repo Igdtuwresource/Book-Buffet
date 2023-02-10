@@ -201,13 +201,28 @@ margin-top:65px;
   
   background-color: #989798;
 }
+.btnr{
+  margin-left:715px;
+  
+  background-color: #989798;
+}
+.btnb{
+  margin-left:720px;
+  
+  background-color: #989798;
+}
 .btnsss{
   margin-top:100px;
 }
 @media screen and (max-width:720px){
-  .btnss{
-    margin-left:130px;
+  .btnb{
+    margin-left:150px;
     }
+    .btnr{
+      margin-left:145px;
+      }.btnss{
+        margin-left:130px;
+        }
     .btnsss{
       margin-top:50px;
     }
