@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel = "icon" href = 
 "https://cdn-icons-png.flaticon.com/512/234/234635.png" 
@@ -59,9 +60,11 @@
         padding-left:80px;
       }
       .btns{
-        margin-bottom:30px;
-        background-color: black;
-        text-decoration: underline;
+       border-radius:5px;
+       margin-bottom:10px;
+       padding-left:5px;
+       padding-right:5px;
+    
       }
       .btns:hover{
 line-height:40px;
@@ -82,9 +85,14 @@ line-height:40px;
             <a class="nav-link" href="https://igdtuwresource.github.io/main-page/">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://igdtuwresource.github.io/login/">Login </a>
+            <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform">Buy </a>
           </li>
-         
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform">Rent </a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="https://forms.gle/iE9po4FFkGzHkb398">Donate </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="https://igdtuwresource.github.io/about-book-buffet/">About Us</a>
           </li>
@@ -117,19 +125,76 @@ line-height:40px;
       <button id="close" class="close">&times;</button><br>
       <h6>Welcome to BOOK BUFFFET</h6>
       <p>
-          <b>LOGIN/ SIGN UP to BUY/ SELL THE BOOK.<br>
+          <b>Fill the form to BUY/ SELL THE BOOK.<br>
           ALSO READ THE TERMS & CONDITIONS.
           </b>
-          <button type="button" class="btns btn-dark" onclick="window.location.href = 'https://igdtuwresource.github.io/login/';">Login</button>
-      </p>
+               </p>
       
   </div>
-  <div class="btnsss">
-  <button type="button" class="btnb btn-outline-dark btn-lg" onclick="document.location='https://igdtuwresource.github.io/signup/'">BUY</button><br><br><br>
-  <button type="button" class="btnr btn-outline-dark btn-lg" onclick="document.location='https://igdtuwresource.github.io/signup/'">RENT</button><br><br><br>
-  <button type="button" class="btnss btn-outline-dark btn-lg" onclick="document.location='https://igdtuwresource.github.io/contact-book-buffet/'">DONATE</button>
-</div>
   
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for books/notes.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th >Book/<br> Notes Name</th>
+    <th >Author</th>
+    <th >Rent</th>
+    <th >Buy</th>
+    <th >Donate</th>
+
+  </tr>
+  <tr>
+    <td>Matrix Algebra Notes</td>
+    <td>Handwritten</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+  
+  <tr>
+    <td>HC VERMA (Part 1 & 2)</td>
+    <td>HC VERMA</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+  <tr>
+    <td>NP BALI Part 2</td>
+    <td>NP BALI</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+  <tr>
+    <td>Applied Chemistry</td>
+    <td>Jain and Jain</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+  <tr>
+    <td>BEE</td>
+    <td>JB GUPTA</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+  <tr>
+    <td>Communication Skills</td>
+    <td>Handwritten notes</td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfQ0FyP8xaPdjrTgADBALFSSTcMVHaHdX3aQdZ-lEYoammFlQ/viewform';">Rent</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdnbryMXrG8DZ4FWaZKqFfCQEfbwCA79V3ogyjdf2XjmtdrFA/viewform';">Buy</button></td>
+    <td><button type="button" class="btns btn-dark" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc1tpXWBDsuGxcIE-FE-B2p70P_iLsB3gxFstH1opzzBc0Okw/viewform';">Donate</button></td>
+
+  </tr>
+
+  
+</table>
     <div>
       <section class="footer">
 
@@ -216,5 +281,27 @@ line-height:40px;
   document.querySelector("#close").addEventListener("click", function(){
       document.querySelector(".popup").style.display = "none";
   });</script>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   </body>
 </html>
